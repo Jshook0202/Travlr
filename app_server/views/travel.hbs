@@ -16,6 +16,7 @@
 						<div class="body">
 							<h1>Travel</h1>
 							<ul id="sites">
+<<<<<<< Updated upstream
 								<li>
 									<a href="travel.html"><img src="images/reef1.jpg" alt="Img"></a>
 									<h2><a href="travel.html">Gale Reef</a></h2>
@@ -46,13 +47,26 @@
 										Vulputate eget libero. In hac habitasse platea dictumst. Integer purus justo, egestas eu consectetur eu, cursus in tortor. Quisque nec nunc ac mi ultrices iaculis.
 									</p>
 								</li>
+=======
+			{{#each trips}}
+								<li>
+									<a href="/travel"><img src="images/{{this.image}}" alt="Img"></a>
+									<h2><a href="/travel">{{this.name}}</a></h2>
+									{{{this.description}}}
+								</li>
+			{{/each}}
+>>>>>>> Stashed changes
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+<<<<<<< Updated upstream
 		{{>footer}}
+=======
+		{{> footer }}
+>>>>>>> Stashed changes
 	</div>
 </body>
 </html>
